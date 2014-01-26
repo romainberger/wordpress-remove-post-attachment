@@ -6,7 +6,7 @@ Adds a "detach from post" link on attachments so you can remove it from the post
 
 ## Installation
 
-[Download the plugin](https://github.com/romainberger/wordpress-remove-post-attachment/archive/master.zip) and upload it on your website like any other plugin.
+[Download the plugin](https://github.com/romainberger/wordpress-remove-post-attachment/archive/master.zip), rename the archive to `wordpress-remove-post-attachment` and upload it on your website like any other plugin.
 
 ## Compatibility
 
