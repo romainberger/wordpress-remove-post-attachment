@@ -18,15 +18,15 @@
   $(document).on('click', '.remove-post-attachment', function(e) {
     e.preventDefault()
     // get the attachment id
-    var datas = $(this).closest('.media-sidebar').find('input[type=hidden]').attr('name')
-      , regex = /\[([0-9]*)\]/
+    var datas = $(this).closest('.media-sidebar').find('.edit-attachment').attr('href')
+      , regex = /post=([0-9]*)&/g
       , match = regex.exec(datas)
 
     if (match !== null) {
       var id = match[1]
 
       $.ajax({
-          url: '/wp-content/plugins/remove-post-attachment/ajax.php'
+          url: '/wp-content/plugins/wordpress-remove-post-attachment/ajax.php'
         , type: 'post'
         , dataType: 'json'
         , data: { id: id }
