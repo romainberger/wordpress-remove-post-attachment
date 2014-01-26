@@ -7,9 +7,10 @@
    * add the "detach from post" link
    */
   $(document).on('click', '.attachments-browser .attachment', function() {
-    var html = '<a class="remove-post-attachment" href="#">Detach from the post</a>'
-
-    $('.attachment-details').find('.delete-attachment').parent().append(html)
+    if ($('.attachment-filters').val() === 'uploaded') {
+      var html = '<a class="remove-post-attachment" href="#">Detach from the post</a>'
+      $('.attachment-details').find('.delete-attachment').parent().append(html)
+    }
   })
 
   /**
