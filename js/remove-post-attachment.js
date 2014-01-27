@@ -27,10 +27,13 @@
       var id = match[1]
 
       $.ajax({
-          url: '/wp-content/plugins/wordpress-remove-post-attachment/ajax.php'
+          url: ajaxurl
         , type: 'post'
         , dataType: 'json'
-        , data: { id: id }
+        , data: {
+              action: 'removePostAttachmentAjax'
+            , id: id
+          }
       })
       .done(function() {
         // quick and dirty: deselect the attachment and remove it from the list
