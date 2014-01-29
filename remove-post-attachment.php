@@ -13,7 +13,7 @@
  * Add the js file to the admin
  */
 function removePostAdminJs() {
-    wp_enqueue_script('admin-galery', plugins_url('/js/remove-post-attachment.js', __FILE__), false, 1, true);
+    wp_enqueue_script('admin-gallery', plugins_url('/js/remove-post-attachment.js', __FILE__), false, 1, true);
 }
 
 add_filter('admin_enqueue_scripts', 'removePostAdminJs');

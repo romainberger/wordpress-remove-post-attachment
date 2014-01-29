@@ -2,7 +2,7 @@
 
 Adds a "detach from post" link on attachments so you can remove it from the post without deleting the file.
 
-![screenshot](screenshot.png)
+![screenshot](assets/screenshot-1.png)
 
 ## Installation
 
