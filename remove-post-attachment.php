@@ -3,7 +3,7 @@
  * Plugin Name:  Remove Post Attachment
  * Plugin URI:   https://github.com/romainberger/wordpress-remove-post-attachment
  * Description:  Allows detaching medias from a post from the gallery
- * Version:      0.1.1
+ * Version:      0.1.2
  * Author:       Romain Berger
  * Author URI:   http://romainberger.com
  * License:      MIT
@@ -13,7 +13,7 @@
  * Add the js file to the admin
  */
 function removePostAdminJs() {
-    wp_enqueue_script('admin-gallery', plugins_url('/js/remove-post-attachment.js', __FILE__), false, 1, true);
+    wp_enqueue_script('remove-post-attachment', plugins_url('/js/remove-post-attachment.js', __FILE__), false, 1, true);
 }
 
 add_filter('admin_enqueue_scripts', 'removePostAdminJs');
