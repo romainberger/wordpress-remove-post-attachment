@@ -20,4 +20,3 @@ Simply upload the plugin (as a zip) from the extension page.
 
 == Screenshots ==
 1. Detach an attachment
-![screenshot](screenshot.png)
