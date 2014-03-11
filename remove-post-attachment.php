@@ -34,4 +34,4 @@ function removePostAttachmentAjax() {
     exit;
 }
 
-add_action('wp_ajax_my_action', 'removePostAttachmentAjax');
+add_action('wp_ajax_removePostAttachmentAjax', 'removePostAttachmentAjax');
